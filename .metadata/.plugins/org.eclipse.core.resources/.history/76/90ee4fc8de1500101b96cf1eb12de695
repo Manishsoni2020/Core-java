@@ -1,0 +1,27 @@
+package literals;
+
+public class Main {
+	
+public static void main(String[] args)
+{
+//	--------LITERALS---------
+//	 A CONTANT VALUE WHICH CAN BE ASSIGN TO THE VARIABLE IS CALLED "LITERALS"
+	
+//	1.Integarl Literals=>FOR (byte,short,int,long)
+//	 (i).Decimal literals:= ALLOWED DIGITS ARE 0 TO 9
+//	 int x=10;
+	
+//	 (ii).Ocatal Literals=> ALLOWRD DIGITS ARE 0 TO 7
+//	 int x=010;
+//	 System.out.println(x); output=8
+	
+//	 (iii). Hexadecimal Literals=> ALLOWED DIGITS ARE 0 TO 9, A TO F, a To f
+//	 int y=0x10;
+//	 System.out.println(y); output=16
+			 
+   int j=0X20;
+	 System.out.println(j); 
+}
+			
+	
+}

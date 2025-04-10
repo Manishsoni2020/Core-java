@@ -1,0 +1,69 @@
+package literals;
+
+public class Main {
+	
+public static void main(String[] args)
+{
+//	--------LITERALS---------
+//	 A CONTANT VALUE WHICH CAN BE ASSIGN TO THE VARIABLE IS CALLED "LITERALS"
+	
+//	1.Integarl Literals=>FOR (byte,short,int,long)
+//	 (i).Decimal literals:= ALLOWED DIGITS ARE 0 TO 9
+//	 int x=10;
+	
+//	 (ii).Ocatal Literals=> ALLOWRD DIGITS ARE 0 TO 7
+//	 int x=010;
+//	 System.out.println(x); output=8
+	
+//	 (iii). Hexadecimal Literals=> ALLOWED DIGITS ARE 0 TO 9, A TO F, a To f
+//	 int y=0x10;
+//	 System.out.println(y); output=16
+			 
+//     int j=0X2455;
+//	 System.out.println(j); 
+	
+//	int x=10;        VALID
+//	int y=066;       VALID
+//	int j=0778;      NOT VALID
+//	int o=0xface;    VALID
+	
+	
+//   2.Floating Point Literals=>FOR(float and double) 
+//	  float f=123.456;     NOT VALID
+//	  float y=123.456f;    VALID
+//	  float u=569.336d;    NOT VALID
+//	  float k=0642;        VALID
+//	  double i=123.456;    VALID
+//	  double d=845.6656d;  VALID
+//	  double l=745.665D;   VALID
+//	  double h=01234.567;  VALID
+//	  double p=0x123.456;  NOT VALID
+	
+//	 3.Boolean Literals=> ONLY POSSIBLE VALUE IS TRUE/FALSE
+//	  boolean b=0;         NOT VALID
+//	  boolean d=True;      NOT VALID
+//	  boolean o=true;      VALID
+//	  boolean g="true";    NOT VALID
+//	  boolean u=false;     VALID
+	 
+//	  Exp=>
+//	  int x=0;
+//	  if(x)
+//	  {
+//		  System.out.println("Good Morning");
+//	  }
+//	  else 
+//	  {
+//		  System.out.println("Good Night");
+//	  }
+//	  output= C.E (type mismatch error)
+	  
+	  
+	  while(1)
+	  {
+		  System.out.println("hello");
+	  }
+}
+			
+	
+}
