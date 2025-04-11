@@ -1,0 +1,10 @@
+package var_arg_method;
+
+public class Main {
+	
+	//------------VAR-ARG-METHOD---------//
+	public static void main(String[]args)
+	{
+		
+	}
+}
