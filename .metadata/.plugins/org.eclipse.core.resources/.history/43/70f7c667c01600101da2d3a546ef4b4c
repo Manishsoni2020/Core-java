@@ -1,0 +1,19 @@
+package flow_control;
+
+public class For_loop {
+	public static void main(String[] args)
+	{
+//		1.Number print
+//		for(int i=1;i<=25;i++)
+//		{
+//			System.out.print(i+" ");
+//		}
+		
+		for(char h='A';h<='Z';h++)
+		{
+			System.out.print(h+" ");
+		}
+		
+		
+	}
+}

@@ -1,0 +1,6 @@
+package declaration_and_accessmodifiers;
+
+public class B {
+	A obj=new A();
+	obj.show();
+}

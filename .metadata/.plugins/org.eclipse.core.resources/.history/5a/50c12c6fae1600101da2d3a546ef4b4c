@@ -1,0 +1,40 @@
+package flow_control;
+
+public class Main {
+ public static void main(String []args)
+ {
+		//----------------Flow Control----------------//
+//		flow control describe the order in which the statement will be
+//		execute at runtime.
+		
+		
+//		1.Selection Statement=>
+//		  1.if-else
+		   int age=12;
+		   if(age>18)
+		   {
+			   System.out.println("apply for vaxin");
+		   }
+		   else 
+		   {
+			   System.out.println("not elligible for vaxin");
+		   }
+		   
+//		  2.Switch
+		   int day=3;
+		   switch(day)
+		   {
+		       case 1:
+			   System.out.println("Monday");
+			   break;
+			   
+		       case 2:
+		    	   System.out.println("Tuesday");
+		    	   break;
+		    	   
+		       case 3:
+		    	   System.out.println("Wednesday");
+		   }
+		   
+ }
+}

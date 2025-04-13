@@ -1,0 +1,12 @@
+package declaration_and_accessmodifiers;
+
+abstract class Student
+{
+	void Present()
+	{
+		System.out.println("I am present");
+	}
+}
+public class Abstract_modifiers {
+
+}

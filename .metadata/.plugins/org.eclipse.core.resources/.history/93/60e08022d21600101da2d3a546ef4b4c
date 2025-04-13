@@ -1,0 +1,15 @@
+package declaration_and_accessmodifiers;
+
+class P
+{
+	public void property()
+	{
+		System.out.println("I am property class");
+	}
+}
+public class Final {
+	public static void main(String[]args)
+	{
+		
+	}
+}

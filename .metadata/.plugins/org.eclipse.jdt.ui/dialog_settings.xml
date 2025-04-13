@@ -55,5 +55,15 @@
 		<item key="updateTextualMatches" value="false"/>
 		<item key="updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+	</section>
+	<section name="nls_accessor_history">
+		<section name="0">
+			<item key="accessorName" value="Messages"/>
+			<item key="accessorPackage" value="=Corejava/src&lt;operators_and_assignments"/>
+			<item key="bundleName" value="messages.properties"/>
+			<item key="bundlePackage" value="=Corejava/src&lt;operators_and_assignments"/>
+		</section>
 	</section>
 </section>

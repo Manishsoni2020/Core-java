@@ -1,0 +1,25 @@
+package flow_control;
+
+public class If_else {
+ public static void main(String []args)
+ {
+		//----------------Flow Control----------------//
+//		flow control describe the order in which the statement will be
+//		execute at runtime.
+		
+	 
+//		  1.if-else=>
+//		   int age=12;
+//		   if(age>18)
+//		   {
+//			   System.out.println("apply for vaxin");
+//		   }
+//		   else 
+//		   {
+//			   System.out.println("not elligible for vaxin");
+//		   }
+		   	   
+	 
+		   
+ }
+}

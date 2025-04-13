@@ -1,0 +1,12 @@
+package declaration_and_accessmodifiers;
+
+public class Static_modifire {
+	
+	int rollno=10;
+	static String Address="Jaipur";
+	
+	public static void main(String []args)
+	{
+		System.out.println(rollno);
+	}
+}
