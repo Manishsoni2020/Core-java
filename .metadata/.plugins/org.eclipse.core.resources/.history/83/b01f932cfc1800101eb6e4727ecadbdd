@@ -1,0 +1,15 @@
+package oops_aggregation_has_a_relationship;
+
+class Engine
+{
+	void start()
+	{
+		System.out.println("Engine is start");
+	}
+}
+public class Car_engine {
+	public static void main(String[]args)
+	{
+		
+	}
+}

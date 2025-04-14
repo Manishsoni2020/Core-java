@@ -1,0 +1,19 @@
+package Interface;
+
+interface A 
+{
+//	Valid Declaration of Variables in interface
+	int x=10;
+	public int y=20;
+	public static int a=50;
+	public static final int i=1;
+	final int j=60;
+	public final int k=55;
+}
+public class Interface_variable {
+	public static void main(String[]args)
+	{
+
+		
+	}
+}

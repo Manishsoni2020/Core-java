@@ -1,0 +1,8 @@
+package Interface;
+
+public class Interface_method {
+	public static void main(String[]args)
+	{
+		
+	}
+}

@@ -1,0 +1,8 @@
+package Interface;
+
+public class Interface_variable {
+	public static void main(String[]args)
+	{
+		
+	}
+}

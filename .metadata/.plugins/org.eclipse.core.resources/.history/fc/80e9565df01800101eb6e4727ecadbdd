@@ -1,0 +1,30 @@
+package Interface_method;
+
+interface A 
+{
+	public void m1(); //same name method but diff return type
+}
+interface B
+{
+	public int m1(); //same name method but diff return type
+}
+class C implements A,B
+{
+	public void m1() //in this case we can implement both method
+	{
+		System.out.println("Again Hello Developer");
+	}
+	
+	public void m1(int i)
+	{
+		System.out.println("the no is "+i);
+	}
+}
+public class Interface_method_case3 {
+	public static void main(String[]args)
+	{
+		A obj=new A();
+		obj.m1();
+		obj.m1(3);
+	}
+}

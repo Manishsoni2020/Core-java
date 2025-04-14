@@ -1,0 +1,29 @@
+package oops_Inheritance;
+
+class Computer 
+{
+	public int parts()
+	{
+		return 10;
+	}
+}
+class Leptop extends Computer
+{
+	public void parts(int x)
+	{
+		System.out.println("Totoal parts is "+x);
+	}
+}
+class ChormBook extends Leptop 
+{
+	public void parts(int y)
+	{
+		System.out.println(y);
+	}
+}
+public class Multi_level_inheritance {
+	public static void main(String[]args)
+	{
+		
+	}
+}
