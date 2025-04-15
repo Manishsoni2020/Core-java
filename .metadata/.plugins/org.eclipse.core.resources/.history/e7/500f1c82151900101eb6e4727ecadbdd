@@ -1,0 +1,24 @@
+package oops_Overriding;
+
+class H 
+{
+	public static void show()
+	{
+		System.out.println("H class");
+	}
+}
+class K  extends H
+{
+	public static void show()
+	{
+		h.show();
+		System.out.println("K class");
+	}
+}
+public class Overriding_case4 {
+public static void main(String[]args)
+{
+	   K obj=new K();
+	   obj.show();
+}
+}

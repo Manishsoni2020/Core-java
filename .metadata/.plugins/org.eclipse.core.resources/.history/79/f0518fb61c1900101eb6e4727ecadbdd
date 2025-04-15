@@ -1,0 +1,15 @@
+package oops_constructor;
+
+class Z 
+{
+	private Z()
+	{
+		System.out.println("I am private Constructor");
+	}
+}
+public class Singleton {
+public static void main(String[]args)
+{
+	
+}
+}

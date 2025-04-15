@@ -1,0 +1,13 @@
+package oops_constructor;
+
+class Calculator 
+{
+	public Calculator()
+	{
+		System.out.println("welcome to my calculator");
+	}
+	
+}
+public class Constructor_overloading {
+
+}

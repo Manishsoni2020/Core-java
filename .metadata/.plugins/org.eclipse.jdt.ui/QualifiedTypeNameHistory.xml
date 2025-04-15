@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="declaration_and_accessmodifiers.Static_modifire"/>
+    <fullyQualifiedTypeName name="oops_Encapsulation.Student_Details"/>
+    <fullyQualifiedTypeName name="oops_Inheritance.ChromBook"/>
+    <fullyQualifiedTypeName name="oops_aggregation_has_a_relationship.Engine"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="oops_constructor.Library"/>
+    <fullyQualifiedTypeName name="oops_constructor.Calculator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

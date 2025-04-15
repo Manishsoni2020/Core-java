@@ -1,0 +1,9 @@
+package oops_Overriding;
+
+
+public class Overriding_case3 {
+public static void main(String[]args)
+{
+
+}
+}

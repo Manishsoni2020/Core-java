@@ -1,0 +1,12 @@
+package oops_constructor;
+
+class A 
+{
+	A()
+	{
+		System.out.println("I am default constructor");
+	}
+}
+public class Default_constructor {
+
+}
