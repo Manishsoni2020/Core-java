@@ -1,0 +1,10 @@
+package collection_frame_work;
+
+import java.util.*;
+public class Vector {
+	public static void main(String[]args)
+	{
+		Vector v=new Vector();
+		System.out.println(v.capacity());
+	}
+}

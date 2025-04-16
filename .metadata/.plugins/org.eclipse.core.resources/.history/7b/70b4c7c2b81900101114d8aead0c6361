@@ -1,0 +1,8 @@
+package cursors_Collection;
+
+import java.util.*;
+public class Iterator_demo {
+public static void main(String[] args) {
+	
+}
+}

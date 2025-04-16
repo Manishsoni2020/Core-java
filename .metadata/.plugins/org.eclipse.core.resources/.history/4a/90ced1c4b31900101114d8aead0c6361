@@ -1,0 +1,8 @@
+package collection_frame_work;
+
+import java.util.*;
+public class Stack_demo {
+	public static void main(String[] args) {
+		
+	}
+}

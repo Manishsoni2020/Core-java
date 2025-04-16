@@ -1,0 +1,29 @@
+package collections_class;
+
+import java.util.*;
+
+class MyComparator implements Comparator
+{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		Integer i=(Integer)o1;
+		return 0;
+	}
+	
+}
+
+public class List_searching2 {
+public static void main(String[] args) {
+	ArrayList al=new ArrayList();
+	al.add(22);
+	al.add(53);
+	al.add(3);
+	al.add(44);
+	al.add(16);
+	System.out.println(al);
+	Collections.sort(al);
+	System.out.println(al);
+	
+}
+}

@@ -1,0 +1,9 @@
+package cursors_Collection;
+
+import java.util.*;
+public class Enumeration {
+public static void main(String[] args) {
+//	Enumeration is applicable for legacy classes only
+	Vector vt=new Vector();
+}
+}
