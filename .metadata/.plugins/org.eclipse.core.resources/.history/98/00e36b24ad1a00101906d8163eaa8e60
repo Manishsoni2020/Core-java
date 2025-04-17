@@ -1,0 +1,14 @@
+package multithreading;
+
+class Display
+{
+	public synchronized void wish(String name)
+	{
+		
+	}
+}
+public class Synchronized_method {
+public static void main(String[] args) {
+	
+}
+}

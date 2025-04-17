@@ -1,0 +1,10 @@
+package multithreading;
+
+
+public class Synchronize_block
+{
+	public static void main(String[] args) {
+
+}
+}
+

@@ -1,0 +1,14 @@
+package multithreading;
+
+class B extends Thread
+{
+	public void run()
+	{
+		System.out.println("hello");
+	}
+}
+public class Overloading_runmethod {
+public static void main(String[] args) {
+	
+}
+}

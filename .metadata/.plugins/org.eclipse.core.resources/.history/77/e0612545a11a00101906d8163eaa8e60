@@ -1,0 +1,17 @@
+package multithreading;
+
+class Show extends Thread
+{
+	pubilc void run()
+	{
+		for(int i=0;i<=10;i++)
+		{
+			
+		}
+	}
+}
+public class Join_method {
+public static void main(String[] args) {
+	
+}
+}

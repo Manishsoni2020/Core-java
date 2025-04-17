@@ -1,0 +1,26 @@
+package multithreading;
+
+
+public class Synchronize_block
+{
+	public static void main(String[] args) {
+		
+}
+}
+class ThreadB extends Synchronize_block
+{
+	int total=0;
+	public void run()
+	{
+		synchronized(this)
+		{
+			System.out.println("Child thread start notifications");
+			for(int i=1;i<=10;i++)
+			{
+				total+=i;
+			}
+			System.out.println("Child thread try to give notifications");
+			this.notify();
+		}
+	}
+}

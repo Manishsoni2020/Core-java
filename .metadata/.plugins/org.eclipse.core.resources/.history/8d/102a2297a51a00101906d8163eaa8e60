@@ -1,0 +1,11 @@
+package multithreading;
+
+class MyT extends Thread
+{
+	
+}
+public class Interruption_demo {
+public static void main(String[] args) {
+	
+}
+}

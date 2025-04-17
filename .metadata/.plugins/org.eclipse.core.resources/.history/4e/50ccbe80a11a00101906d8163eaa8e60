@@ -1,0 +1,11 @@
+package multithreading;
+
+class Show extends Thread
+{
+	
+}
+public class Join_method {
+public static void main(String[] args) {
+	
+}
+}

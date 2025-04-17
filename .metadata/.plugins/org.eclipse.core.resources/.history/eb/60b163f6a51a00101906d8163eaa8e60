@@ -1,0 +1,27 @@
+package multithreading;
+
+class MyT extends Thread
+{
+	public void run()
+	{
+		try
+		{
+			for(int i=1;i<=10;i++)
+			{
+				System.out.println("Lazy Thread");
+				Thread.sleep(2000);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception handle");
+		}
+	}
+}
+public class Interruption_demo {
+public static void main(String[] args) {
+	MyT obj=new MyT();
+	obj.start();
+	obj.interrupt();
+}
+}

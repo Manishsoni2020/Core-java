@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="declaration_and_accessmodifiers.Static_modifire"/>
     <fullyQualifiedTypeName name="oops_Encapsulation.Student_Details"/>
@@ -33,9 +32,26 @@
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="collections_class.MyComparator"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="project.Student"/>
+    <fullyQualifiedTypeName name="multithreading.MyThread"/>
+    <fullyQualifiedTypeName name="multithreading.Home"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="multithreading.MyT"/>
+    <fullyQualifiedTypeName name="java.beans.IntrospectionException"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="multithreading.Display"/>
+    <fullyQualifiedTypeName name="multithreading.Mythread"/>
+    <fullyQualifiedTypeName name="multithreading.Synchronized_method"/>
+    <fullyQualifiedTypeName name="multithreading.Synchronize_block"/>
+    <fullyQualifiedTypeName name="multithreading.ThreadB"/>
+    <fullyQualifiedTypeName name="multithreading.Table"/>
+    <fullyQualifiedTypeName name="multithreading.Thread1"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

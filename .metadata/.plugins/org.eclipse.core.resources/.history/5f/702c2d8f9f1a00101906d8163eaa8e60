@@ -1,0 +1,12 @@
+package multithreading;
+
+class C extends Thread 
+{
+	
+}
+public class Yeild_method {
+public static void main(String[]args)
+{
+	
+}
+}
