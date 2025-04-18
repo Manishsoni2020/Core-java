@@ -1,0 +1,12 @@
+package exceptionHandling;
+
+import java.io.FileWriter;
+
+public class Compiletime_IOException {
+public static void main(String[] args) {
+	FileWriter fw=new FileWriter("omg.text");
+	fw.write("Hello word");
+	fw.close();
+	fw.write("again");
+}
+}

@@ -1,0 +1,13 @@
+package java_8_features;
+
+interface A 
+{
+	void show();
+}
+public class Lambda_Expressions_Demo2 {
+public static void main(String[] args) {
+	A obj=()->System.out.println("zero parameter lambda expression");
+	
+	obj.show();
+}
+}

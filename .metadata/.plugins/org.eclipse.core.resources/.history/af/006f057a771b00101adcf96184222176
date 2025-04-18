@@ -1,0 +1,18 @@
+package exceptionHandling;
+
+import java.io.IOException;
+
+class A 
+{
+	void show() throws IOException
+	{
+		System.out.println("divice error");
+	}
+}
+public class Throws_Exception {
+public static void main(String[] args)throws InterruptedException
+{
+	
+}
+
+}

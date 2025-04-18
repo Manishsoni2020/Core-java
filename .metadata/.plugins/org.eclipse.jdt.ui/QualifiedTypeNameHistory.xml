@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-    <fullyQualifiedTypeName name="declaration_and_accessmodifiers.Static_modifire"/>
-    <fullyQualifiedTypeName name="oops_Encapsulation.Student_Details"/>
-    <fullyQualifiedTypeName name="oops_Inheritance.ChromBook"/>
-    <fullyQualifiedTypeName name="oops_aggregation_has_a_relationship.Engine"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="oops_constructor.Library"/>
     <fullyQualifiedTypeName name="oops_constructor.Calculator"/>
     <fullyQualifiedTypeName name="collection_frame_work.Vector"/>
@@ -42,10 +35,8 @@
     <fullyQualifiedTypeName name="multithreading.MyThread"/>
     <fullyQualifiedTypeName name="multithreading.Home"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="multithreading.MyT"/>
     <fullyQualifiedTypeName name="java.beans.IntrospectionException"/>
-    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="multithreading.Display"/>
     <fullyQualifiedTypeName name="multithreading.Mythread"/>
     <fullyQualifiedTypeName name="multithreading.Synchronized_method"/>
@@ -54,4 +45,19 @@
     <fullyQualifiedTypeName name="multithreading.Table"/>
     <fullyQualifiedTypeName name="multithreading.Thread1"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalAccessException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="exceptionHandling.Throws_Exception"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="exceptionHandling.Throws_Nested_try_catch"/>
 </qualifiedTypeNameHistroy>

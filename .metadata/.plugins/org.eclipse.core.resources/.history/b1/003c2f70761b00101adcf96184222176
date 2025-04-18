@@ -1,0 +1,18 @@
+package exceptionHandling;
+
+import java.io.IOException;
+
+public class Throws_Exception {
+public static void main(String[] args)throws IOException
+{
+	dostuff();
+}
+public static void dostuff() throws InterruptedException
+{
+	domorestuff();
+}
+public static void domorestuff() throws InterruptedException
+{
+	Thread.sleep(2000);
+}
+}

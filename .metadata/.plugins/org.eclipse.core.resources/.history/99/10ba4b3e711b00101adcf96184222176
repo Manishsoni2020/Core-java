@@ -1,0 +1,15 @@
+package exceptionHandling;
+
+public class Throw_Exception2 {
+	
+	static void ckecksalary(int salary)
+	{
+		if(salary<10000)
+		{
+			throw new IllegalAccessException("salary is low...!");
+		}
+	}
+public static void main(String[] args) {
+	
+}
+}

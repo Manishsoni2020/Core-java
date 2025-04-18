@@ -1,0 +1,41 @@
+package exceptionHandling;
+
+import java.io.IOException;
+
+class B 
+{
+	void music() throws IOException
+	{
+		throw new IOException("Exception auccer");
+	}
+}
+public class Throws_Nested_try_catch {
+	
+	void show2()
+	{
+		try 
+		{
+			try 
+			{
+				int a=59/0;
+				System.out.println(a);
+				try 
+				{
+					
+				} catch (Exception e) 
+				{
+					
+				}
+			} catch (Exception e) 
+			{
+				System.out.println("handle 1");
+			}
+		} catch (Exception ex) 
+		{
+
+		}
+	}
+public static void main(String[] args) {
+	
+}
+}
