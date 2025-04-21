@@ -1,8 +1,0 @@
-package declaration_and_accessmodifiers;
-
-public class Class_modifiers {
-	public static void main(String[] args)
-	{
-		
-	}
-}
