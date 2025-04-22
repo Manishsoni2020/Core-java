@@ -1,8 +1,0 @@
-package declaration_and_accessmodifiers;
-
-public class A {
-	void show()
-	{
-		System.out.println("Hello");
-	}
-}

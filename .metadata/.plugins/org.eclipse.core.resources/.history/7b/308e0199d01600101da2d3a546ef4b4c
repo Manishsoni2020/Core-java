@@ -1,7 +1,0 @@
-package declaration_and_accessmodifiers;
-import 
-
-public class B {
-	A obj=new A();
-	obj.show();
-}
