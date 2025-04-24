@@ -1,8 +1,0 @@
-package map_collection;
-
-import java.util.*;
-public class Hash_table_demo {
-public static void main(String[] args) {
-	Hashtable ht=new Hashtable();
-}
-}

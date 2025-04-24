@@ -1,8 +1,0 @@
-package set_collection_frame_work.copy;
-
-import java.util.*;
-public class Treeset_demo {
-public static void main(String[] args) {
-	
-}
-}

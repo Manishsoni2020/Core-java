@@ -24,7 +24,7 @@ public static void main(String[]args)
 	//write into file
 	try
 	{
-		FileWriter file=new FileWriter("C:\\Users\\hp\\Desktop\\Demo.txt");
+		FileWriter file=new FileWriter("C:\\Users\\hp\\Desktop\\Data.json");
 		
 		file.write(obj.toString());
 		file.flush();

@@ -1,8 +1,0 @@
-package Queue_collection;
-
-import java.util.*;
-public class PriorityQueue_demo {
-public static void main(String[] args) {
-	PriorityQueue q =new PriorityQueue();
-}
-}

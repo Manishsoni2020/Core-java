@@ -1,8 +1,0 @@
-package cursors_Collection;
-
-import java.util.*;
-public class Listiterator_demo {
-public static void main(String[] args) {
-	LinkedList ll=new LinkedList();
-}
-}

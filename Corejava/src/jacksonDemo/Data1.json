@@ -1,0 +1,110 @@
+{
+  "reference": "1004349000",
+  "date": "2025-04-19",
+  "domain": "tous.com",
+  "domain_url": "https://www.tous.com",
+  "collection_name": "necklaces",
+  "brand": "TOUS",
+  "manufacturer": "TOUS",
+  "url": "https://www.tous.com/gb-en/short-gold-necklace-with-cultured-pearl-and-7-mm-bear-motif-sweet-dolls/p/1004349000",
+  "image_folder": "./tous_images_us/necklaces/1004349000",
+  "images": [
+    "./tous_images_us/necklaces/1004349000/image1.jpg",
+    "./tous_images_us/necklaces/1004349000/image2.jpg",
+    "./tous_images_us/necklaces/1004349000/image3.jpg",
+    "./tous_images_us/necklaces/1004349000/image4.jpg"
+  ],
+  "category": "necklaces",
+  "content": {
+    "en": {
+      "description": "Short TOUS Sweet Dolls necklace with bear motif in 18kt yellow gold with cultured freshwater pearl. Motif size: 7 mm. Necklace length: 45 cm. Lobster clasp.",
+      "productName": "Short gold Necklace with cultured pearl and 7 mm bear motif Sweet Dolls"
+    },
+    "fr": {
+      "description": "Collier court TOUS Sweet Dolls avec motif ourson en or jaune 18 ct et perle de culture d’eau douce. Taille du motif : 7 mm. Longueur du collier : 45 cm. Fermoir mousqueton.",
+      "productName": "Collier en or avec motif ourson 7 mm et perle de culture court Sweet Dolls"
+    },
+    "de": {
+      "description": "Kurze Halskette TOUS Sweet Dolls mit Süßwasser-Zuchtperle und Bärenmotiv aus 18 kt Gelbgold. Motivgröße: 7 mm. Länge der Halskette: 45 cm. Karabiner-Verschluss.",
+      "productName": "Kurze Halskette Sweet Dolls aus Gold mit Zuchtperle und 7 mm großem Bärenmotiv"
+    },
+    "es": {
+      "description": "Collar corto TOUS Sweet Dolls con motivo oso en oro amarillo de 18 kt y perla cultivadas de agua dulce. Tamaño motivo: 7 mm. Longitud collar: 45 cm. Cierre mosquetón.",
+      "productName": "Collar corto de oro con motivo oso 7 mm y perla cultivada Sweet Dolls"
+    }
+  },
+  "specification": {
+    "en": {
+      "lang": "en",
+      "domain_country_code": "en",
+      "currency": "USD",
+      "base_price": "$800",
+      "sales_price": "$800",
+      "active_price": "$800",
+      "stock_quantity": "",
+      "availability": "Yes",
+      "availability_message": "AVAILABLE",
+      "shipping_lead_time": "",
+      "shipping_expenses": "",
+      "marketplace_retailer_name": "",
+      "condition": "NEW",
+      "reviews_rating_value": "",
+      "reviews_number": "",
+      "product_link": "https://www.tous.com/us-en/short-gold-necklace-with-cultured-pearl-and-7-mm-bear-motif-sweet-dolls/p/1004349000"
+    },
+    "fr": {
+      "lang": "en",
+      "domain_country_code": "fr",
+      "currency": "EUR",
+      "base_price": "705 €",
+      "sales_price": "705 €",
+      "active_price": "705 €",
+      "stock_quantity": "",
+      "availability": "Yes",
+      "availability_message": "AVAILABLE",
+      "shipping_lead_time": "",
+      "shipping_expenses": "",
+      "marketplace_retailer_name": "",
+      "condition": "NEW",
+      "reviews_rating_value": "",
+      "reviews_number": "",
+      "product_link": "https://www.tous.com/ic-fr/short-gold-necklace-with-cultured-pearl-and-7-mm-bear-motif-sweet-dolls/p/1004349000"
+    },
+    "de": {
+      "lang": "en",
+      "domain_country_code": "de",
+      "currency": "USD",
+      "base_price": "705 €",
+      "sales_price": "705 €",
+      "active_price": "705 €",
+      "stock_quantity": "",
+      "availability": "Yes",
+      "availability_message": "AVAILABLE",
+      "shipping_lead_time": "",
+      "shipping_expenses": "",
+      "marketplace_retailer_name": "",
+      "condition": "NEW",
+      "reviews_rating_value": "",
+      "reviews_number": "",
+      "product_link": "https://www.tous.com/ic-de/short-gold-necklace-with-cultured-pearl-and-7-mm-bear-motif-sweet-dolls/p/1004349000"
+    },
+    "es": {
+      "lang": "en",
+      "domain_country_code": "es",
+      "currency": "USD",
+      "base_price": "",
+      "sales_price": "",
+      "active_price": "",
+      "stock_quantity": "",
+      "availability": "Yes",
+      "availability_message": "AVAILABLE",
+      "shipping_lead_time": "",
+      "shipping_expenses": "",
+      "marketplace_retailer_name": "",
+      "condition": "NEW",
+      "reviews_rating_value": "",
+      "reviews_number": "",
+      "product_link": "https://www.tous.com/ic-es/short-gold-necklace-with-cultured-pearl-and-7-mm-bear-motif-sweet-dolls/p/1004349000"
+    }
+  }
+}

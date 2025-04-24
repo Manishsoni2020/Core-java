@@ -1,8 +1,0 @@
-package exceptionHandling;
-
-public class Complietime_ClassnotFoundException {
-	public static void main(String[] args) {
-		Class.forName("com.welcome.Myclass");
-		
-	}
-}

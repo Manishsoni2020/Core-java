@@ -1,9 +1,0 @@
-package map_collection;
-
-import java.util.*;
-public class Identity_hashMap_demo {
-public static void main(String[] args) {
-	HashMap<String, String> ihm=new HashMap<String, String>();
-	Integer i1=new Integer(10);
-}
-}
