@@ -27,8 +27,8 @@ public static void main(String[]args) throws IOException
 	 String jsondata= mapper.writeValueAsString(al);
 	 System.out.println(jsondata);
 	 
-	 //for create json file of our javaobjectdata
-	 //mapper.writeValue(new File("C:\\Users\\hp\\Desktop\\Objecttojson.json"), al);
+	// for create json file of our javaobjectdata
+	 mapper.writeValue(new File("C:\\Users\\hp\\Desktop\\Objecttojson.json"), al);
 }
 }
 class Employee 
