@@ -8,5 +8,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jsoup-1.15.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/hp/Downloads/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-datatype-jsr310-2.17.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-core-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-annotations-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-annotations-2.17.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-databind-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-core-2.2.3 (2).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
