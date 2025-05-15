@@ -6,10 +6,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/mysql-connector-java-8.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/json-20231013.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/json-20231013-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/json-20210307.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20210307.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20231013.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20231013-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jsoup-1.15.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/mysql-connector.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

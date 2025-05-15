@@ -6,13 +6,28 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jsoup-1.15.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/gson-2.10.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-datatype-jsr310-2.17.0-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-core-2.17.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-annotations-2.17.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-annotations-2.17.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-databind-2.17.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/hp/Downloads/jackson-core-2.2.3 (2).jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/commons-logging-1.3.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-annotations-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-annotations-2.17.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-core-2.2.3 (2).jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-core-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-databind-2.17.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jackson-datatype-jsr310-2.17.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/javax.xml-1.3.4.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20210307.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20231013.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-20231013-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/jsoup-1.15.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/mysql-connector-j-9.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/mysql-connector-java-8.0.28-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/spring-aop-7.0.0-M2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/spring-beans-7.0.0-M2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/spring-context-7.0.0-M2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/spring-core-7.0.0-M2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Desktop/New folder/jar files/spring-expression-7.0.0-M2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

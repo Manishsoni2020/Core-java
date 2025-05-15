@@ -1,0 +1,43 @@
+{
+  "studentId": "U20250123",
+  "name": {
+    "first": "Aarav",
+    "last": "Sharma"
+  },
+  "age": 21,
+  "department": "Computer Science",
+  "enrollmentYear": 2022,
+  "contact": {
+    "email": "aarav.sharma@university.edu",
+    "phone": "+91-9876543210",
+    "address": {
+      "street": "123 Tech Lane",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "postalCode": "560001"
+    }
+  },
+  "courses": [
+    {
+      "courseCode": "CS101",
+      "courseName": "Data Structures",
+      "credits": 4,
+      "grades": {
+        "midterm": 82,
+        "final": 88,
+        "assignment": 90
+      }
+    },
+    {
+      "courseCode": "CS202",
+      "courseName": "Operating Systems",
+      "credits": 3,
+      "grades": {
+        "midterm": 76,
+        "final": 85,
+        "assignment": 80
+      }
+    }
+  ],
+  "isHosteller": false
+}
