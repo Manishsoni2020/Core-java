@@ -1,0 +1,603 @@
+Microsoft Windows [Version 10.0.19045.5854]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hp>mongosh
+Current Mongosh Log ID: 682d98bd697f363db46c4bcf
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.1
+Using MongoDB:          8.0.9
+Using Mongosh:          2.5.1
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-05-20T15:39:49.111+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show database
+MongoshInvalidInputError: [COMMON-10001] 'database' is not a valid argument for "show".
+test> show dbs
+admin           40.00 KiB
+car_dealership  72.00 KiB
+config          72.00 KiB
+local           72.00 KiB
+school          72.00 KiB
+test> use car_dealership
+switched to db car_dealership
+car_dealership> dbs.collections
+ReferenceError: dbs is not defined
+car_dealership> db.collections
+car_dealership.collections
+car_dealership> show collections
+cars
+car_dealership> db.cars.find()
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  },
+car_dealership>
+    _id: ObjectId('682d802a8f02c99abf6c4bd2'),
+    maker: 'Hyundai',
+    model: 'Creta',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Naturally Aspirated', cc: 1493, torque: '250 Nm' },
+    features: [
+      'Sunroof',
+      'Leather Seats',
+      'Wireless Charging',
+      'Ventilated Seats',
+      'Bluetooth'
+    ],
+    sunroof: true,
+    airbags: 6
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd3'),
+    maker: 'Maruti Suzuki',
+    model: 'Baleno',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1197, torque: '113 Nm' },
+    features: [ 'Projector Headlamps', 'Apple CarPlay', 'ABS' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd4'),
+    maker: 'Mahindra',
+    model: 'XUV500',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Turbocharged', cc: 2179, torque: '360 Nm' },
+    features: [ 'All-Wheel Drive', 'Navigation System', 'Cruise Control' ],
+    sunroof: true,
+    airbags: 6
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd5'),
+    maker: 'Honda',
+    model: 'City',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1498, torque: '145 Nm' },
+    features: [ 'Keyless Entry', 'Auto AC', 'Multi-angle Rearview Camera' ],
+    sunroof: false,
+    airbags: 4
+  }
+]
+car_dealership> db.cars.findOne()
+{
+  _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+  maker: 'Tata',
+  model: 'Nexon',
+  fuel_type: 'Petrol',
+  transmission: 'Automatic',
+  engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+  features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+  sunroof: false,
+  airbags: 2
+}
+car_dealership> db.cars.find({maker:"Tata"})
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  }
+]
+car_dealership> db.cars.find({fuel_type:"Petrol"})
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd3'),
+    maker: 'Maruti Suzuki',
+    model: 'Baleno',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1197, torque: '113 Nm' },
+    features: [ 'Projector Headlamps', 'Apple CarPlay', 'ABS' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd5'),
+    maker: 'Honda',
+    model: 'City',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1498, torque: '145 Nm' },
+    features: [ 'Keyless Entry', 'Auto AC', 'Multi-angle Rearview Camera' ],
+    sunroof: false,
+    airbags: 4
+  }
+]
+car_dealership> db.cars.find({model:1})
+
+car_dealership> db.cars.find({},{model:1})
+[
+  { _id: ObjectId('682d7f638f02c99abf6c4bd1'), model: 'Nexon' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd2'), model: 'Creta' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd3'), model: 'Baleno' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd4'), model: 'XUV500' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd5'), model: 'City' }
+]
+car_dealership> db.cars.find({},{model:1,_id:0})
+3[
+  { model: 'Nexon' },
+  { model: 'Creta' },
+  { model: 'Baleno' },
+  { model: 'XUV500' },
+  { model: 'City' }
+]
+car_dealership> db.cars.find({}{features:"Auto AC"})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:15)
+
+> 1 | db.cars.find({}{features:"Auto AC"})
+    |                ^
+  2 |
+
+car_dealership> db.cars.find({},{features:"Auto AC"})
+[
+  { _id: ObjectId('682d7f638f02c99abf6c4bd1'), features: 'Auto AC' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd2'), features: 'Auto AC' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd3'), features: 'Auto AC' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd4'), features: 'Auto AC' },
+  { _id: ObjectId('682d802a8f02c99abf6c4bd5'), features: 'Auto AC' }
+]
+car_dealership> db.cars.find({"engine.type":"Turbocharged"})
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd4'),
+    maker: 'Mahindra',
+    model: 'XUV500',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Turbocharged', cc: 2179, torque: '360 Nm' },
+    features: [ 'All-Wheel Drive', 'Navigation System', 'Cruise Control' ],
+    sunroof: true,
+    airbags: 6
+  }
+]
+car_dealership> db.cars.updateOne(
+... {"model":"Mahindra"},
+... {$set:{Color:"Red"}}
+... )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+car_dealership> db.cars.find()
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd2'),
+    maker: 'Hyundai',
+    model: 'Creta',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Naturally Aspirated', cc: 1493, torque: '250 Nm' },
+    features: [
+      'Sunroof',
+      'Leather Seats',
+      'Wireless Charging',
+      'Ventilated Seats',
+      'Bluetooth'
+    ],
+    sunroof: true,
+    airbags: 6
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd3'),
+    maker: 'Maruti Suzuki',
+    model: 'Baleno',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1197, torque: '113 Nm' },
+    features: [ 'Projector Headlamps', 'Apple CarPlay', 'ABS' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd4'),
+    maker: 'Mahindra',
+    model: 'XUV500',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Turbocharged', cc: 2179, torque: '360 Nm' },
+    features: [ 'All-Wheel Drive', 'Navigation System', 'Cruise Control' ],
+
+car_dealership> db.cars.find()
+[
+  {
+    _id: ObjectId('682d7f638f02c99abf6c4bd1'),
+    maker: 'Tata',
+    model: 'Nexon',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Turbocharged', cc: 1199, torque: '170 Nm' },
+    features: [ 'Touchscreen', 'Reverse Camera', 'Bluetooth Connectivity' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd2'),
+    maker: 'Hyundai',
+    model: 'Creta',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Naturally Aspirated', cc: 1493, torque: '250 Nm' },
+    features: [
+      'Sunroof',
+      'Leather Seats',
+      'Wireless Charging',
+      'Ventilated Seats',
+      'Bluetooth'
+    ],
+    sunroof: true,
+    airbags: 6
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd3'),
+    maker: 'Maruti Suzuki',
+    model: 'Baleno',
+    fuel_type: 'Petrol',
+    transmission: 'Automatic',
+    engine: { type: 'Naturally Aspirated', cc: 1197, torque: '113 Nm' },
+    features: [ 'Projector Headlamps', 'Apple CarPlay', 'ABS' ],
+    sunroof: false,
+    airbags: 2
+  },
+  {
+    _id: ObjectId('682d802a8f02c99abf6c4bd4'),
+    maker: 'Mahindra',
+    model: 'XUV500',
+    fuel_type: 'Diesel',
+    transmission: 'Manual',
+    engine: { type: 'Turbocharged', cc: 2179, torque: '360 Nm' },
+    features: [ 'All-Wheel Drive', 'Navigation System', 'Cruise Control' ],
+    sunroof: true,
+    airbags: 6
+  },
+  {
+
+car_dealership> use schoolDB
+switched to db schoolDB
+schoolDB> db.createCollection("admins")
+{ ok: 1 }
+schoolDB> show collcetion
+MongoshInvalidInputError: [COMMON-10001] 'collcetion' is not a valid argument for "show".
+schoolDB> show collection
+MongoshInvalidInputError: [COMMON-10001] 'collection' is not a valid argument for "show".
+schoolDB> show collections
+admins
+schoolDB> db.createCollection("teachers")
+{ ok: 1 }
+schoolDB> db.createCollection("students")
+{ ok: 1 }
+schoolDB> show collections
+admins
+students
+teachers
+schoolDB> db.admins.insertOne("id":"A1","name":"Manish","role":"Admin")
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:24)
+
+> 1 | db.admins.insertOne("id":"A1","name":"Manish","role":"Admin")
+    |                         ^
+  2 |
+
+schoolDB> db.admins.insertOne(id:"A1",name:"Manish",role:"Admin")
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:22)
+
+> 1 | db.admins.insertOne(id:"A1",name:"Manish",role:"Admin")
+    |                       ^
+  2 |
+
+schoolDB> db.admins.insertOne({id:"A1",name:"Manish",role:"Admin"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('682da610697f363db46c4bd0')
+}
+schoolDB> db.teachers.insertOne({id:"T1",name:"Kajal",subject:"Java",role:"Teacher"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('682da662697f363db46c4bd1')
+}
+schoolDB> db.students.insertOne({id:"S1",name:"Rahul",grade:"10",role:"Student"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('682da6a2697f363db46c4bd2')
+}
+schoolDB> db.students.find()
+[
+  {
+    _id: ObjectId('682da6a2697f363db46c4bd2'),
+    id: 'S1',
+    name: 'Rahul',
+    grade: '10',
+    role: 'Student'
+  }
+]
+schoolDB> db.teachers.find()
+[
+  {
+    _id: ObjectId('682da662697f363db46c4bd1'),
+    id: 'T1',
+    name: 'Kajal',
+    subject: 'Java',
+    role: 'Teacher'
+  },
+  {
+    _id: ObjectId('682db520397a82082eee5841'),
+    id: 'T5',
+    name: 'surendra',
+    subject: 'python'
+  }
+]
+schoolDB> db.students.find()
+[
+  {
+    _id: ObjectId('682da6a2697f363db46c4bd2'),
+    id: 'S1',
+    name: 'Rahul',
+    grade: '10',
+    role: 'Student'
+  },
+  {
+    _id: ObjectId('682db553397a82082eee5842'),
+    id: 'S5',
+    name: 'Unnati',
+    grade: '9'
+  }
+]
+
+schoolDB> show collections
+admins
+
+schoolDB> db.teachers.find()
+[
+  {
+    _id: ObjectId('682da662697f363db46c4bd1'),
+    id: 'T1',
+    name: 'Kajal',
+    subject: 'Java',
+    role: 'Teacher'
+  },
+  {
+    _id: ObjectId('682db520397a82082eee5841'),
+    id: 'T5',
+    name: 'surendra',
+    subject: 'python'
+  }
+]
+schoolDB> db.teachers.find({id:1})
+
+schoolDB> db.teacher.find({},{id:1})
+
+schoolDB> db.teachers.find({},{id:1})
+[
+  { _id: ObjectId('682da662697f363db46c4bd1'), id: 'T1' },
+  { _id: ObjectId('682db520397a82082eee5841'), id: 'T5' }
+]
+schoolDB> db.teachers.find({name:"surendra"})
+[
+  {
+    _id: ObjectId('682db520397a82082eee5841'),
+    id: 'T5',
+    name: 'surendra',
+    subject: 'python'
+  }
+]
+schoolDB>
+
+schoolDB> db.students.find()
+[
+  {
+    _id: ObjectId('682db553397a82082eee5842'),
+    id: 'S5',
+    name: 'Unnati',
+    grade: '9'
+  }
+]
+schoolDB> db.admins.find()
+[
+  {
+    _id: ObjectId('682da610697f363db46c4bd0'),
+    id: 'A1',
+    name: 'Manish',
+    role: 'Admin'
+  }
+]
+schoolDB> db.students.insertOne("id":"S6","Name":"Rakesh","grade":"1")
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:26)
+
+> 1 | db.students.insertOne("id":"S6","Name":"Rakesh","grade":"1")
+    |                           ^
+  2 |
+
+schoolDB> db.students.insertOne({id:"S6",name:"Rakesh",grade:"1"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('682dbc06697f363db46c4bd3')
+}
+schoolDB> db.students.find()
+[
+  {
+    _id: ObjectId('682db553397a82082eee5842'),
+    id: 'S5',
+    name: 'Unnati',
+    grade: '9'
+  },
+  {
+    _id: ObjectId('682dbc06697f363db46c4bd3'),
+    id: 'S6',
+    name: 'Rakesh',
+    grade: '1'
+  }
+]
+schoolDB> show collections
+admins
+students
+teachers
+schoolDB> db.teachers.find()
+[
+  {
+    _id: ObjectId('682da662697f363db46c4bd1'),
+    id: 'T1',
+    name: 'Kajal',
+    subject: 'Java',
+    role: 'Teacher'
+  },
+  {
+    _id: ObjectId('682db520397a82082eee5841'),
+    id: 'T5',
+    name: 'surendra',
+    subject: 'python'
+  }
+]
+schoolDB> db.teachers.deleteOne("id":"T5")
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:26)
+
+> 1 | db.teachers.deleteOne("id":"T5")
+    |                           ^
+
+schoolDB> db.students.find()
+[
+  {
+    _id: ObjectId('682db553397a82082eee5842'),
+    id: 'S5',
+    name: 'Unnati',
+    grade: '9'
+  },
+  {
+    _id: ObjectId('682dbc06697f363db46c4bd3'),
+    id: 'S6',
+    name: 'Rakesh',
+    grade: '1'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd4'),
+    id: 'S2',
+    name: 'hanumanji',
+    grade: '5'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd5'),
+    id: 'S1',
+    name: 'rama',
+    grade: '2'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd6'),
+    id: 'S12',
+    name: 'pragati',
+    grade: '3'
+  }
+]
+schoolDB> db.students.find().pretty()
+[
+  {
+    _id: ObjectId('682db553397a82082eee5842'),
+    id: 'S5',
+    name: 'Unnati',
+    grade: '9'
+  },
+  {
+    _id: ObjectId('682dbc06697f363db46c4bd3'),
+    id: 'S6',
+    name: 'Rakesh',
+    grade: '1'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd4'),
+    id: 'S2',
+    name: 'hanumanji',
+    grade: '5'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd5'),
+    id: 'S1',
+    name: 'rama',
+    grade: '2'
+  },
+  {
+    _id: ObjectId('682dc585697f363db46c4bd6'),
+    id: 'S12',
+    name: 'pragati',
+    grade: '3'
+  }
+]
+schoolDB>
