@@ -23,7 +23,11 @@ class Admin extends User {
 	}
 
 	void showDetails() {
-		System.out.println("Admin ID: " + id + ", Name: " + name);
+		System.out.println("+----------+----------------+");
+		System.out.printf("| %-8s | %-14s | \n", "Admin ID", "Name");
+		System.out.println("+----------+----------------+");
+		System.out.printf("| %-8s | %-14s |\n", id, name);
+		System.out.println("+----------+----------------+");
 	}
 }
 
@@ -36,7 +40,9 @@ class Teacher extends User {
 	}
 
 	void showDetails() {
-		System.out.println("Teacher ID: " + id + ", Name: " + name + ", Subject: " + subject);
+
+		System.out.printf("| %-4s | %-11s | %-11s |\n", id, name, subject);
+
 	}
 }
 
@@ -49,7 +55,7 @@ class Student extends User {
 	}
 
 	void showDetails() {
-		System.out.println("Student ID: " + id + ", Name: " + name + ", Grade: " + grade);
+		System.out.printf("| %-4s | %-11s | %-8s |\n",id,name,grade);
 	}
 }
 
@@ -62,21 +68,21 @@ public class ProjectUsingMySql {
 			// Database connection
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/school_system", "root", "2002");
-			while(true) {
-			System.out.println("----- School Administration System -----");
-			System.out.print("Enter your role (Admin/Teacher/Student): ");
-			String role = sc.nextLine();
+			while (true) {
+				System.out.println("----- School Administration System -----");
+				System.out.print("Enter your role (Admin/Teacher/Student): ");
+				String role = sc.nextLine();
 
-			if (role.equalsIgnoreCase("admin")) {
-				adminPanel();
-			} else if (role.equalsIgnoreCase("teacher")) {
-				teacherPanel();
-			} else if (role.equalsIgnoreCase("student")) {
-				studentPanel();
-			} else {
-				System.out.println("Invalid role.");
-			}
-			con.close();
+				if (role.equalsIgnoreCase("admin")) {
+					adminPanel();
+				} else if (role.equalsIgnoreCase("teacher")) {
+					teacherPanel();
+				} else if (role.equalsIgnoreCase("student")) {
+					studentPanel();
+				} else {
+					System.out.println("Invalid role.");
+				}
+				con.close();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -214,22 +220,30 @@ public class ProjectUsingMySql {
 	public static void viewAllTeachers() throws Exception {
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM teacher");
+		System.out.println("\n=== All Teacher ===");
+		System.out.printf("+------+-------------+-------------+\n");
+		System.out.printf("|  ID  |    Name     |   Subject   |\n");
+		System.out.printf("+------+-------------+-------------+\n");
 
 		while (rs.next()) {
 			Teacher t = new Teacher(rs.getString("id"), rs.getString("name"), rs.getString("subject"));
 			t.showDetails();
 		}
+		System.out.printf("+------+-------------+-------------+\n");
 	}
 
 	// View All Students
 	public static void viewAllStudents() throws Exception {
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM student");
-
+		System.out.printf("+------+-------------+----------+\n");
+		System.out.printf("|  ID  |    Name     |   Grade  |\n");
+		System.out.printf("+------+-------------+----------+\n");
 		while (rs.next()) {
 			Student s = new Student(rs.getString("id"), rs.getString("name"), rs.getString("grade"));
 			s.showDetails();
 		}
+		System.out.printf("+------+-------------+----------+\n");
 	}
 
 	// Add Teacher

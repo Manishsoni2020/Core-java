@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.apache.pdfbox.pdmodel.common.PDRectangle"/>
-    <fullyQualifiedTypeName name="org.apache.pdfbox.pdmodel.font.PDType1Font"/>
-    <fullyQualifiedTypeName name="org.apache.pdfbox.pdmodel.font.Standard14Fonts"/>
-    <fullyQualifiedTypeName name="org.apache.pdfbox.pdmodel.font.Standard14Fonts.FontName"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
-    <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Document"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
     <fullyQualifiedTypeName name="org.w3c.dom.NodeList"/>
@@ -25,7 +20,6 @@
     <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFRow"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="listCollectionInterface.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="schoolAdministration.Admin"/>
     <fullyQualifiedTypeName name="schoolAdministration.Teacher"/>
     <fullyQualifiedTypeName name="schoolAdministration.Student"/>
+    <fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+    <fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
+    <fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.jsoup.Connection"/>
+    <fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
 </qualifiedTypeNameHistroy>
