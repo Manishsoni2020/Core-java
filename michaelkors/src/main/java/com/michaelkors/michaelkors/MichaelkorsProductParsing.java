@@ -124,23 +124,23 @@ public class MichaelkorsProductParsing {
 				}
 
 //				// json file creation
-				File outputDir = new File("output");
-				if (!outputDir.exists())
-					outputDir.mkdirs();
-				try {
-					ObjectMapper mapper = new ObjectMapper();
-					for (Product product : allProducts) {
-
-						File jsonFile = new File(outputDir, product.sku + ".json");
-
-						System.out.println("hello " + product);
-
-						mapper.writerWithDefaultPrettyPrinter().writeValue(jsonFile, product);
-						System.out.println(" Saved: " + jsonFile.getName());
-					}
-				} catch (Exception e) {
-					System.out.println(e);
-				}
+//				File outputDir = new File("output");
+//				if (!outputDir.exists())
+//					outputDir.mkdirs();
+//				try {
+//					ObjectMapper mapper = new ObjectMapper();
+//					for (Product product : allProducts) {
+//
+//						File jsonFile = new File(outputDir, product.sku + ".json");
+//
+//						System.out.println("hello " + product);
+//
+//						mapper.writerWithDefaultPrettyPrinter().writeValue(jsonFile, product);
+//						System.out.println(" Saved: " + jsonFile.getName());
+//					}
+//				} catch (Exception e) {
+//					System.out.println(e);
+//				}
 			}
 
 		} catch (Exception e) {
@@ -222,23 +222,37 @@ public class MichaelkorsProductParsing {
 				System.out.println(" - " + img);
 			}
 
-			String baseSlug = "/product/medium-logo-stripe-crossbody/_/R-MK_35F3G7ZC5B"; // example product slug
-			String[] languages = { "en", "fr", "de", "it", "pl" };
-			String[] countries = { "mt", "fr", "de", "it", "pl" };
+			String baseSlug = "/product/medium-logo-stripe-crossbody/_/R-MK_35F3G7ZC5B"; // Optional, agar product page
+																							// chahiye to
+			String[] languages = { "fr", "de", "it" };
+			String[] countries = { "fr", "de", "it" };
 
-			String productUrl2 = "https://www.michaelkors.global/mt/en" + baseSlug;
+			Map<String, String> baseDomainMap = new HashMap<>();
+			baseDomainMap.put("fr_fr", "https://www.michaelkors.fr/homme/");
+			baseDomainMap.put("de_de", "https://www.michaelkors.de/herren/");
+			baseDomainMap.put("it_it", "https://www.michaelkors.it/uomo/");
+
+			// English version (global base URL, optional)
+			String productUrlEn = "https://www.michaelkors.global/mt/en" + baseSlug;
 
 			try {
-				Document enDoc1 = Jsoup.connect(productUrl).get();
 				Pair<LanguageContent, List<String>> result = extractLanguageContent(enDoc, "en");
-
 				product.addTranslation("en", result.getKey());
 
 				for (int i = 0; i < languages.length; i++) {
 					String lang = languages[i];
 					String country = countries[i];
+					String key = country + "_" + lang;
 
-					String langUrl = "https://www.michaelkors.global/" + country + "/" + lang + baseSlug;
+					String base = baseDomainMap.get(key);
+					if (base == null) {
+						System.out.println("❌ Men category URL mapping missing for: " + key);
+						continue;
+					}
+
+					// Use only category URL, no product slug appended
+					String langUrl = base;
+					System.out.println("Fetching category URL: " + langUrl);
 
 					try {
 						Connection.Response response1 = Jsoup.connect(langUrl).header("accept",
@@ -253,21 +267,15 @@ public class MichaelkorsProductParsing {
 								.header("upgrade-insecure-requests", "1")
 								.header("user-agent",
 										"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36")
-								.timeout(30000).followRedirects(true).ignoreHttpErrors(true)
+								.timeout(60000).followRedirects(true).ignoreHttpErrors(true)
 								.method(Connection.Method.GET).execute();
 
-						Document doc = response.parse();
-						Pair<LanguageContent, List<String>> langResult = extractLanguageContent(doc, lang);
+						Document endoc2 = response1.parse();
+						Pair<LanguageContent, List<String>> langResult = extractLanguageContent(endoc2, lang);
 						LanguageContent content = langResult.getKey();
 						List<String> sizes = langResult.getValue();
 
 						product.addTranslation(lang, content);
-
-						// ✅ Console Output for Each Language
-						System.out.println("🌐 Language: " + lang);
-						System.out.println("🛒 Description: " + content.description);
-						System.out.println("📏 Sizes: " + String.join(", ", result.getValue()));
-						System.out.println("-----------------------------------");
 
 						Map<String, String> langSpec = new LinkedHashMap<>();
 						langSpec.put("lang", lang);
@@ -294,84 +302,11 @@ public class MichaelkorsProductParsing {
 						System.out.println("⚠️ Language page not found: " + langUrl);
 					}
 				}
-
-			} catch (IOException e) {
-				System.out.println(e.getMessage());
+			} catch (Exception e) {
+				System.out.println("❌ Error: " + e.getMessage());
 			}
 
-			// Print or export the product JSON if needed
-//	        System.out.println("✅ Product Scraping Completed for all languages.");
-
-//			Pair<LanguageContent, List<String>> result = extractLanguageContent(enDoc, "en");
-//			LanguageContent enContent = result.getKey();
-//			product.addTranslation("en", enContent);
-//
-//			String slug = productUrl.substring(productUrl.lastIndexOf("/") + 1);
-//
-//			String[] languages = { "fr", "de", "it", "en","pl" };
-//			String []country= {"fr","dk","it","pl"};
-//			for (String lang : languages) {
-//				String langUrl = "https://www.michaelkors.global/" + country + lang + slug;
-//				try {
-//					Document doc = Jsoup.connect(langUrl).get();
-//
-//					Pair<LanguageContent, List<String>> result1 = extractLanguageContent(doc, lang);
-//					LanguageContent content1 = result1.getKey();
-//
-//					product.addTranslation(lang, content1);
-//				} catch (IOException e) {
-//					System.out.println("⚠️ Language page not found: " + langUrl);
-//				}
-//			}
-//			
-//			for (String lang : languages) {
-//			String langUrl = "https://www.michaelkors.global/" + lang + slug + "?lang=en&country=" + lang;
-//			try {
-//				Document doc = Jsoup.connect(langUrl).get();
-//
-//				Pair<LanguageContent, List<String>> result2 = extractLanguageContent(doc, lang);
-//				LanguageContent content1 = result2.getKey();
-//				List<String> sizes = result.getValue();
-//
-//				product.addTranslation(lang, content1);
-//				Map<String, String> langSpec = new LinkedHashMap<>();
-//
-//				langSpec.put("lang", "en");
-//				langSpec.put("domain_country_code", lang);
-//				langSpec.put("currency", "EUR");
-//				langSpec.put("base_price", product.price);
-//				langSpec.put("sales_price", product.price);
-//				langSpec.put("active_price", product.price);
-//				langSpec.put("stock_quantity", "");
-//				langSpec.put("availability", "Yes");
-//				langSpec.put("availability_message", "AVAILABLE");
-//				langSpec.put("shipping_lead_time", "");
-//				langSpec.put("shipping_expenses", "");
-//				langSpec.put("marketplace_retailer_name", "");
-//				langSpec.put("condition", "NEW");
-//				langSpec.put("reviews_rating_value", "");
-//				langSpec.put("reviews_number", "");
-//				langSpec.put("size_available", new Gson().toJson(sizes));
-//
-//				langSpec.put("sku_link", langUrl);
-//
-//				product.specification.put(lang, langSpec);
-//
-//			} catch (IOException e) {
-//				System.out.println("⚠️ Language page not found: " + langUrl);
-//			}
-//		}
-//			
 			System.out.println(" SKU: " + product.sku + " | Price: " + product.price);
-			for (Map.Entry<String, LanguageContent> entry : product.content.entrySet()) {
-				String lang = entry.getKey();
-				LanguageContent content = entry.getValue();
-
-				System.out.println("\n [" + lang + "]");
-				System.out.println(" Name: " + content.productName);
-				System.out.println(" Long Desc: " + content.description);
-			}
-
 			for (Map.Entry<String, LanguageContent> entry : product.content.entrySet()) {
 				String lang = entry.getKey();
 				LanguageContent content1 = entry.getValue();
@@ -392,10 +327,6 @@ public class MichaelkorsProductParsing {
 		}
 	}
 
-	private static String formatPrice(String priceRaw) {
-		return priceRaw.replaceAll("[^\\d.,]", "").trim();
-	}
-
 	private static Pair<LanguageContent, List<String>> extractLanguageContent(Document doc, String lang) {
 		String productName = doc.select("h1.product-name.overflow-hidden").text().trim();
 		String shortDesc = doc.select("div.product-details-tabs__item>p").text().trim();
@@ -409,5 +340,9 @@ public class MichaelkorsProductParsing {
 
 		LanguageContent content = new LanguageContent(productName, shortDesc);
 		return new Pair<>(content, sizeList);
+	}
+
+	private static String formatPrice(String priceRaw) {
+		return priceRaw.replaceAll("[^\\d.,]", "").trim();
 	}
 }

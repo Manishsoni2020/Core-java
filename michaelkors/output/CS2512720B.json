@@ -7,7 +7,7 @@
   "collection_name" : "clothing",
   "brand" : "MICHAEL KORS",
   "manufacturer" : "MICHAEL",
-  "images" : [ "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_1", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_2", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_1?$ProductThumbnail$", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_1?$large$", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_2?$large$", "https://www.michaelkors.global/akam/13/pixel_263988b7?a=dD0zNDU4NWY2YmExMzQ0YjExMWJlMWQ3NTlkZmJjMjliZTUwYzE2OTBlJmpzPW9mZg==" ],
+  "images" : [ "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_1", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_2", "https://michaelkors.scene7.com/is/image/MichaelKors/CS2512720B-6778_1?$large$", "", "https://www.michaelkors.global/akam/13/pixel_263988b3?a=dD0zNDU4NWY2YmExMzQ0YjExMWJlMWQ3NTlkZmJjMjliZTUwYzE2OTBlJmpzPW9mZg==" ],
   "color" : "DUSTY SAGE HEATHER",
   "main_material" : null,
   "specification" : { },
