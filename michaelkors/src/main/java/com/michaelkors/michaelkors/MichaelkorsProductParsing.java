@@ -222,8 +222,8 @@ public class MichaelkorsProductParsing {
 				System.out.println(" - " + img);
 			}
 
-			String baseSlug = "/product/medium-logo-stripe-crossbody/_/R-MK_35F3G7ZC5B"; // Optional, agar product page
-																							// chahiye to
+			String baseSlug = "/product/medium-logo-stripe-crossbody/_/R-MK_35F3G7ZC5B";
+																						
 			String[] languages = { "fr", "de", "it" };
 			String[] countries = { "fr", "de", "it" };
 
@@ -305,8 +305,6 @@ public class MichaelkorsProductParsing {
 			} catch (Exception e) {
 				System.out.println("❌ Error: " + e.getMessage());
 			}
-
-			System.out.println(" SKU: " + product.sku + " | Price: " + product.price);
 			for (Map.Entry<String, LanguageContent> entry : product.content.entrySet()) {
 				String lang = entry.getKey();
 				LanguageContent content1 = entry.getValue();
